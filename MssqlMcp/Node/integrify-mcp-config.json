@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mssql-integrify": {
+      "command": "node",
+      "args": ["./dist/index.js"],
+      "env": {
+        "SERVER_NAME": "your-server-name",
+        "SQL_USER": "your-username",
+        "SQL_PASSWORD": "your-password",
+        "DATABASE_NAME": "your-database",
+        "READONLY": "false",
+        "CONNECTION_TIMEOUT": "30",
+        "TRUST_SERVER_CERTIFICATE": "true"
+      }
+    }
+  }
+}
